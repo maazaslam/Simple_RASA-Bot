@@ -1,0 +1,9 @@
+language: en
+pipeline:
+ - name: WhitespaceTokenizer
+ - name: CountVectorsFeaturizer
+ - name: DIETClassifier
+   epochs: 200
+   random_seed: 2
+ - name: EntitySynonymMapper
+  
